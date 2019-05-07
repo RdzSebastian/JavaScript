@@ -30,6 +30,8 @@ function existencia(nombre, apellido){
 
 // existencia("Sebastian", "Rodriguez");
 
+//------------- Rest -----------------
+
 function UsoArray(...meses){
 	for(let uno of meses){
 		document.write(uno + "<br>");
@@ -37,6 +39,8 @@ function UsoArray(...meses){
 };
 
 //UsoArray("Enero", "Febrero", "Marzo");
+
+//------------ Spread ----------------
 
 function UsoArray2(nombre, precio){
 	return "Nombre: " + nombre + "<br>Precio: " + precio;
@@ -47,9 +51,13 @@ var juguete = ["Autito", 25];
 document.write( UsoArray2(...juguete));
 */
 
+// ---------- Funciones anónimas ------
+
 var siete = function(){ 
 	respuesta = "Hola a todos";
 	return respuesta;
 };
 
-document.write(siete());
+//document.write(siete());
+
+
