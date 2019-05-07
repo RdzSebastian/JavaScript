@@ -1,0 +1,15 @@
+<h1>Client side IP geolocation using ipinfo.io
+
+<div id="IP">Loading...................</div>
+<div id="Country">Loading...................</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript">
+
+ $.get('https://ipinfo.io',function(response){
+  $("#IP").html('IP: <b>'+response.ip+'<b>');
+ $("#Country").html('Country:<b>'+response.country+'<b>');
+ },'json');
+</script>
