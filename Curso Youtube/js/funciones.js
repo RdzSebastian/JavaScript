@@ -61,3 +61,17 @@ var siete = function(){
 //document.write(siete());
 
 
+// ---------------- CALL BACK----------
+
+var a = function(nombre, uno) { var e=nombre; uno(e); }
+var b = function(i){document.write(i); };
+
+//a("Seba",b);
+
+
+//------------------ ARROW -----------------
+
+
+var dos = (nombre, apellido) => nombre + apellido;
+
+document.write(dos("Seba", "Rodriguez"));
